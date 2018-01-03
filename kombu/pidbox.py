@@ -384,6 +384,6 @@ class Mailbox(object):
             oid = self._tls.OID = oid_from(self)
             return oid
 
-    @cached_property
+    @property
     def producer_pool(self):
         return maybe_evaluate(self._producer_pool)
